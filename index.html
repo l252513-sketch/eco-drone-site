@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDrone - Eco-Friendly Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo.svg" alt="EcoDrone Logo" width="50">
+        <h1>EcoDrone</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#preorder">Pre-Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>Welcome to EcoDrone</h2>
+            <p>Revolutionizing delivery with zero-emission drones.</p>
+            <img src="assets/drone1.jpg" alt="EcoDrone in action" width="300">
+            <!-- CSS-only accordion -->
+            <input type="checkbox" id="accordion-toggle" class="accordion-toggle">
+            <label for="accordion-toggle" class="accordion-label">Learn More</label>
+            <div class="accordion-content">
+                <p>EcoDrone uses AI to optimize routes and reduce carbon footprint.</p>
+            </div>
+        </section>
+        <section id="features">
+            <h2>Key Features</h2>
+            <article class="feature">
+                <h3>Eco-Friendly</h3>
+                <p>Solar-powered drones.</p>
+                <img src="assets/drone2.jpg" alt="Solar drone" width="200">
+            </article>
+            <article class="feature">
+                <h3>Fast Delivery</h3>
+                <p>Under 30 minutes.</p>
+            </article>
+            <article class="feature">
+                <h3>Smart Tracking</h3>
+                <p>Real-time updates.</p>
+            </article>
+        </section>
+        <section id="preorder">
+            <h2>Pre-Order Now</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="delivery" name="interests" value="delivery">
+                    <label for="delivery">Fast Delivery</label>
+                    <input type="checkbox" id="eco" name="interests" value="eco">
+                    <label for="eco">Eco Features</label>
+                    <input type="checkbox" id="tracking" name="interests" value="tracking">
+                    <label for="tracking">Smart Tracking</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Plan Type:</legend>
+                    <input type="radio" id="basic" name="plan" value="basic">
+                    <label for="basic">Basic</label>
+                    <input type="radio" id="premium" name="plan" value="premium">
+                    <label for="premium">Premium</label>
+                </fieldset>
+                
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">Select</option>
+                    <option value="us">USA</option>
+                    <option value="ca">Canada</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 EcoDrone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
